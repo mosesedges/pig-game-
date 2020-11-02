@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+
+<body>
+    <h1>Practice Space</h1>
+    <script>
+        var num1 = [45, 4, 9, 16, 25];
+        var num2 = num1.forEach(function(value, index) {
+            console.log(value, index);
+        });
+
+
+        var kar = num1.map(function(value, index) {
+            return value * 2 + " " + index
+        });
+
+        console.log(kar);
+
+        var over15 = num1.filter(function(value, index) {
+            return value > 15;
+        });
+
+        console.log(over15);
+
+
+        var sum = num1.reduceRight(function(total, value, index) {
+            return total + value;
+        });
+
+        console.log(sum);
+
+
+
+
+        // var cars = [{
+        //     type: "Volvo",
+        //     year: 2016,
+        //     age: 24
+        // }, {
+        //     type: "Saab",
+        //     year: 2001,
+        //     age: 48
+        // }, {
+        //     type: "BMW",
+        //     year: 2010,
+        //     age: 40
+        // }];
+
+        // var data = cars.sort(function(a, b) {
+        //     return a.year - b.age;
+        //     return a.age - b.age
+        // });
+
+        // console.log(data);
+
+
+
+
+        // var neco = cars.sort(function(a, b) {
+        //     var x = a.type.toLowerCase();
+        //     var y = b.type.toLowerCase();
+        //     if (x < y) {
+        //         return -1;
+        //     }
+        //     if (x > y) {
+        //         return 1;
+        //     }
+        //     return 0;
+        // });
+
+        // console.log(neco);
+
+
+
+
+
+
+
+
+
+
+
+        // var arr = ["kevin", "victor", "jumal", "olivia", "allen", "mike", "future", "edges", "omoye", "lizzy"];
+
+        // document.write(arr);
+        // "<br/>"
+        // "<br/>"
+
+        // var nas = arr.sort()
+        // nas = [nas.length - 1];
+        // console.log(nas);
+    </script>
+</body>
+
+</html>
